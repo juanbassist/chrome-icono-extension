@@ -1,3 +1,3 @@
 # Desarrollo de Extension de Chrome
 
-Pequeña extension que indica el precio de las criptomonedas de algun mercado en particular.
+Proyecto que se utiliza para explorar las capacidades de desarrollo de extension de chrome
