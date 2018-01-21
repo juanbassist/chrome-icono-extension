@@ -1,9 +1,29 @@
 {
-	"name": "Mi extension",
-	"version": "1.0",
 	"manifest_version": 2,
+  "name": "Mi extension",
+  "version": "1.0",
 	"description": "Esto es una descripcion corta",
-	"browser_action": {
-		"default_icon": "icono.png"
-	}
+	"background": {
+    "scripts": ["background.js"]
+  },
+  "icons": { 
+    "16": "icono.png",
+    "48": "icono.png",
+    "128": "icono.png" 
+  },
+  "browser_action": {
+		"default_icon": "icono.png",
+		"default_popup": "index.html"
+	},
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+    "notifications",
+    "activeTab",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ]
 }

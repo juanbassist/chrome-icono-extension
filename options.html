@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Opciones de la extension</title>
+  <style>
+    body: { padding: 10px; }
+  </style>
+</head>
+
+<body>
+
+  <label>
+    <input type="checkbox" id="notificacion_activada">
+    Notificacion Activada
+  </label><br>
+
+  <label for="valor_alto_xrp">Valor Alto XRP</label>
+  <input type="text" id="valor_alto_xrp" value="0.00"><br>
+  <label for="valor_alto_xrp">Valor Bajo XRP</label>
+  <input type="text" id="valor_bajo_xrp" value="0.00"><br>
+  <label for="intervalo_tiempo_ms">Intervalo de tiempo de actualizacion</label>
+  <input type="text" id="intervalo_tiempo_ms" value="2000"><br>
+  <button id="save">Guardar</button>
+  <div id="status"></div>
+  <script src="options.js"></script>
+</body>
+</html>
